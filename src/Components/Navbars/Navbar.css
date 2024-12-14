@@ -1,0 +1,57 @@
+/* Custom Navbar Styling */
+.custom-navbar {
+    background-color: darkslategray; /* Slate color for navbar */
+    padding: 0.8rem 1rem; /* Spacing for a better look */
+  }
+  
+  .navbar-brand img {
+    border-radius: 8px; /* Optional: Rounded corners for the logo */
+  }
+  
+  .nav-link-custom {
+    color: white !important; /* White text for links */
+    font-size: large;
+    font-weight: 500; /* Semi-bold font */
+    padding: 1rem 1rem; /* Spacing around links */
+    text-decoration: none; /* Remove underline by default */
+    transition: background-color 0.3s, text-decoration 0.3s; /* Smooth hover effect */
+  }
+  
+  .nav-link-custom:hover {
+    color: rgb(168, 6, 149) !important; /* Hover effect for links */
+    text-decoration: underline;
+  }
+  /* Full-Size Image Styling */
+.hero-section {
+    width: 100%;
+    height: auto; /* Ensures the height adjusts proportionally */
+    position: relative;
+    overflow: hidden; /* Ensures no overflow issues */
+  }
+  
+  .hero-image {
+    width: 100%; /* Full width of the viewport */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes any gaps around the image */
+    object-fit: cover; /* Ensures the image covers its container without distortion */
+  }
+  
+
+  
+  
+  /* Responsive Navbar Logo */
+  @media (max-width: 768px) {
+    .navbar-brand img {
+      width: 60px; /* Adjust logo size for smaller screens */
+      height: 30px;
+    }
+  
+    .nav-link-custom {
+      font-size: large; /* Smaller font size for links */
+      padding: 6px ;
+    }
+    .hero-image {
+        object-fit: contain; /* Ensure the full image is visible on smaller screens */
+      }
+  }
+  
